@@ -11,3 +11,12 @@ body{
    justify-content: center;
    height: 100vh;
 }
+.pad{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 10px;
+   flex:1 0 calc(33.3% - 20px);
+   background:radial-gradient(#e18174, #d15746);
+   border-radius: 10px;
+}
