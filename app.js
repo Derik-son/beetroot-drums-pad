@@ -52,4 +52,4 @@ const drums = new Howl({
   }
 
   drumpad.addEventListener('click', playDrum);
-  drumpad.addEventListener('touchstart', playDrum);
+  drumpad.addEventListener('touch', playDrum);
