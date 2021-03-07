@@ -20,3 +20,7 @@ body{
    background:radial-gradient(#e18174, #d15746);
    border-radius: 10px;
 }
+.pad img{
+   width: 150px;
+   pointer-events: none;
+}
