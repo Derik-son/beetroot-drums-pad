@@ -31,4 +31,11 @@ const drums = new Howl({
    }
  });
 
- drums.play('snare');
+ const  drumpad = document.querySelector('.drumpad');
+
+ drumpad.addEventListener('click', () =>{
+    if (Event.target.classList.contains('pad')) {
+      let soundToPlay = Event.target.dataset.sound;
+      drums.play(soundToPlay);
+    }
+ });
