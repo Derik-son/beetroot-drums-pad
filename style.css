@@ -1,0 +1,13 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background: #282828;
+}
+.drumpad{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   height: 100vh;
+}
