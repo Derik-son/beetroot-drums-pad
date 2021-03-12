@@ -38,18 +38,19 @@ const drums = new Howl({
       let soundToPlay = event.target.dataset.sound;
       drums.play(soundToPlay);
     }
-    function setViewportHeight() {
-      let vh = window.innerHeight * 0.01;
-      console.log(vh);
-      document.documentElement.style.setProperty('--vh', `${vh}px`);
-    }
-  
-    
-    setViewportHeight();
-    window.addEventListener('resize', () => {
-      setTimeout(setViewportHeight, 100);
-    }); 
+  }
+  function setViewportHeight() {
+    let vh = window.innerHeight * 0.01;
+    console.log(vh);
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
   }
 
+  
+  setViewportHeight();
+  window.addEventListener('resize', () => {
+    setTimeout(setViewportHeight, 100);
+  }); 
+
   drumpad.addEventListener('click', playDrum);
-  drumpad.addEventListener('touch', playDrum);
+  drumpad.addEventListener('touchstart', playDrum);
+  
