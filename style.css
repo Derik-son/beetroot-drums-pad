@@ -22,6 +22,10 @@ body{
    border-radius: 10px;
 }
 .pad img{
-   width: 150px;
+   width: 200px;
    pointer-events: none;
+}
+.pad:active {
+   touch-action: auto;
+   background:radial-gradient(#ff9d90, #d34432);
 }
